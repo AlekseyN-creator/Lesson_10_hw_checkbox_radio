@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=DotGothic16&display=swap");
+
+/*@font-face {
+	font-family: "MagistralC";
+	src: url("../fonts/MagistralC.woff2") format("woff2"), url("../fonts/MagistralC.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+*/
+
+/* Обнуляющие стили */
+/* убираем отступы внеш/внут, рамки
+ и прибавление рамок */
+*,
+::before,
+::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: 0;
+}
+/* убираем декорацию у пунктов списка */
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+/* убираем декорацию ссылок 
+при наведении */
+a:hover {
+	text-decoration: none;
+}
+/* обнуляем заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-style: inherit;
+}
+/* убираем фантомный отступ у картинки */
+img {
+	vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+body {
+	line-height: 1;
+	color: black;
+	font-family: "DotGothic16", sans-serif;
+	padding: 10px;
+	background-color: rgb(194, 193, 193);
+}
+/* обнуляем кнопки */
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+}
+/* Поля, кнопки, текст ареа наследуют шрифт*/
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+/* Обнуляющие стили закончились */
+/* ================================ */
+.form {
+}
+.form__line {
+	/*width: 100%;*/
+	margin: 0px 0px 15px 0px;
+}
+.form__line:last-child {
+	margin-bottom: 0;
+}
+.form__input {
+	text-transform: uppercase;
+	color: blue;
+	font-weight: 700;
+}
+.checkbox {
+}
+.checkbox__input {
+}
+.checkbox__label {
+	cursor: pointer;
+}
+.option {
+}
+.option__input {
+	display: inline-block;
+	margin: 0px 0px 10px 0px;
+}
+
+.form__checkbox-label {
+	display: inline-block;
+	cursor: pointer;
+}
+.input {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px;
+	resize: vertical;
+	/*display: inline-block;*/
+}
+input:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 0px red;
+}
+.file {
+	margin: 20px 0px;
+}
+.file__label {
+	background-color: rgb(211, 168, 233);
+	width: 120px;
+	height: 30px;
+	border-radius: 20px;
+	padding: 10px 5px 5px 5px;
+	border: 1px solid black;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.file__label:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 0px blue;
+}
+.file__input {
+	/*visibility: hidden;*/
+	/*opacity: 0;*/
+}
+.form__select {
+	color: red;
+	background-color: rgb(16, 248, 117);
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 10px;
+	text-align: center;
+	border: 1px solid black;
+}
+.form__select:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 0px red;
+}
+option {
+	color: blue;
+	background-color: darkorange;
+	border-radius: 10px;
+	text-align: center;
+	margin: 20px 0px;
+}
+.form__button {
+	width: 100px;
+	height: 30px;
+	background-color: rgb(255, 247, 140);
+	margin: 20px auto;
+	border: 1px solid black;
+	border-radius: 20px;
+	text-transform: uppercase;
+	color: red;
+}
+.form__button:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 0px red;
+}
+/*
+.form__span {
+	color: red;
+}
+.form__line {
+	height: 30px;
+	margin: 0px 0px 10px 0px;
+}
+.form__input {
+	margin: 0px auto;
+	width: 60%;
+	text-transform: uppercase;
+	background-color: green;
+}
+.form__label {
+	text-align: center;
+	width: 75%;
+	margin: 0px auto;
+	display: inline-block;
+}
+.input {
+	width: 45%;
+	height: 40px;
+	padding: 0px 12px;
+	border-radius: 20px;
+	margin: 0px auto;
+	display: block;
+	background-color: rgb(231, 255, 13);
+	text-transform: uppercase;
+	border: 1px solid black;
+}
+.option {
+	margin: 0px 0px 30px 0px;
+}
+.input:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 0px rgb(71, 83, 255);
+}
+.form__button {
+	padding: 0px 15px;
+	width: 120px;
+	height: 30px;
+	background-color: rgba(255, 99, 71, 0.666);
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+	margin: 0px 0px 0px 200px;
+	display: inline-block;
+}
+.form__button:hover {
+	background-color: violet;
+}
+.form__button:active {
+	background-color: yellow;
+	box-shadow: inset 0px 2px 5px 2px #000;
+	border: 1px solid black;
+}
+.form__button:focus {
+	outline: none;
+}
+*/

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_10_hw_checkbox_radio
+	</title>
+</head>
+
+<body>
+	<form class="form" action="#" method="GET" enctype="multipart/form-data">
+		<!--
+		<div class="form__line">
+			<div class="form__input">
+				<label class="form__label" for="username">Имя пользователя <span class="form__span">*</span></label>
+				<input class="input" type="text" id="username" placeholder="Имя пользователя *">
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<label class="form__label" for="password">Пароль <span class="form__span">*</span></label>
+				<input class="input" required minlength="8" type="password" id="password" placeholder="Пароль *">
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<label class="form__label" for="date">Дата</label>
+				<input class="input" required type="date" id="date" placeholder="">
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<label class="form__label" for="number">Номер</label>
+				<input class="input" type="number" id="number" placeholder="Номер">
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<label class="form__label" for="tel">Телефон</label>
+				<input class="input" type="tel" id="tel" placeholder="Телефон">
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<label class="form__label" for="time">Время</label>
+				<input class="input" type="time" id="time" placeholder="Время">
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<label class="form__label" for="email">@email <span class="form__span">*</span></label>
+				<input class="input" required minlength="6" type="email" id="email" placeholder="@email *">
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<label class="form__label" for="email">Запасной @email <span class="form__span">*</span></label>
+				<input class="input" disabled minlength="6" type="email" id="email" placeholder="Запасной @email *">
+			</div>
+		</div>-->
+		<div class="form__line">
+			Транспорт и недвижимость
+			<div class="form__input">
+				<div class="checkbox">
+					<input tabindex="1" disabled checked class="checkbox__input" type="checkbox" id="house" value="house">
+					<label for="house" class="checkbox__label">Дача</label>
+				</div>
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<div class="checkbox">
+					<input tabindex="2" class="checkbox__input" type="checkbox" id="car" value="car">
+					<label for="car" class="checkbox__label">Машина</label>
+				</div>
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<div class="checkbox">
+					<input tabindex="3" class="checkbox__input" type="checkbox" id="flat" value="flat">
+					<label for="flat" class="checkbox__label">Квартира</label>
+				</div>
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<div class="checkbox">
+					<input tabindex="4" class="checkbox__input" checked type="checkbox" id="plane" value="plane">
+					<label for="plane" class="checkbox__label">Самолет</label>
+				</div>
+			</div>
+		</div>
+		<div class="form__line">
+			Фрукты
+			<div class="form__input">
+				<input tabindex="5" class="input" type="checkbox" id="avacado">
+				<label class="form__checkbox-label" for="avacado">Авакадо</label>
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<input tabindex="6" class="input" type="checkbox" id="mango">
+				<label class="form__checkbox-label" for="mango">Манго</label>
+			</div>
+		</div>
+		<div class="form__line">
+			Языки
+			<div class="form__input">
+				<div class="option">
+					<input tabindex="7" class="option__input" checked type="radio" value="rus" name="lang" id="rus">
+					<label class="form__checkbox-label" for="rus">Russian</label>
+				</div>
+			</div>
+			<div class="form__input">
+				<div class="option">
+					<input tabindex="7" class="option__input" type="radio" value="eng" name="lang" id="eng">
+					<label class="form__checkbox-label" for="eng">English</label>
+				</div>
+			</div>
+
+			<div class="form__input">
+				<div class="option">
+					<input tabindex="7" class="option__input" disabled type="radio" value="spn" name="lang" id="spn">
+					<label class="form__checkbox-label" for="spn">Spanish</label>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="form__line">
+			Текстовый блок для текста
+			<div class="form__input">
+				<textarea tabindex="8" class="input" name="message" id="" cols="30" rows="5"
+					placeholder="Пишите здесь..."></textarea>
+			</div>
+		</div>
+		<div class="form__line">
+			Текстовый блок для текста
+			<div class="form__input">
+				<textarea tabindex="9" class="input" disabled name="message" id="" cols="30" rows="5"
+					placeholder="Пишите здесь..."></textarea>
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<div class="file">
+					<label tabindex="10" for="file" class="file__label">Add file</label>
+					<input accept=".jpg, .jpeg, .png" multiple class="file__input" type="file" id="file">
+				</div>
+			</div>
+		</div>
+		<div class="form__line">
+			Выпадающий список
+			<div class="form__input">
+				<select tabindex="11" class="form__select" name="currency" id="">
+					<option value="1">Песок №1</option>
+					<option value="2">Щебень №2</option>
+					<option value="3" selected>Гравий №3</option>
+					<option value="4">Галька №4</option>
+					<option disabled value="5">Шлак №5</option>
+				</select>
+			</div>
+		</div>
+		<div class="form__line">
+			Выпадающий список с множественным выбором
+			<div class="form__input">
+				<select tabindex="11" multiple class="form__select" name="currency" id="">
+					<option value="1">Плов №1</option>
+					<option value="2">Лагман №2</option>
+					<option disabled value="3" selected>Чучвара №3</option>
+					<option selected value="4">Борщ №4</option>
+					<option value="5">Блины №5</option>
+				</select>
+			</div>
+		</div>
+		<div class="form__line">
+			<div class="form__input">
+				<button tabindex="12" class="form__button" type="button">Кнопка</button>
+				<button tabindex="13" class="form__button" type="submit">Отправить</button>
+				<button tabindex="14" class="form__button" type="reset">Сбросить</button>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>
